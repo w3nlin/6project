@@ -67,7 +67,7 @@
         }
     }
     var arr=[];
-    oCan[0].ontouchmove=function(e){
+    oCan[0].touchmove=function(e){
         const ball1=new Ball(e.offsetX, e.offsetY,40,colorArr1[Math.floor(Math.random()*colorArr.length)]);
         arr.push(ball1);
         console.log(arr);
@@ -79,7 +79,7 @@
         }
     },20)
     var arr1=[];
-    oCan[1].ontouchmove=function(e){
+    oCan[1].touchmove=function(e){
         const ball2=new Ball(e.offsetX, e.offsetY,80,colorArr[Math.floor(Math.random()*colorArr.length)]);
         arr1.push(ball2);
         console.log(arr1);
